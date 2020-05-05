@@ -8,6 +8,7 @@
 # Node version v14.1.0
 $ nvm install 14.1.0
 $ nvm use 14.1.0
+$ npm install -g yarn
 
 # Setp 1: install packages
 $ yarn install
