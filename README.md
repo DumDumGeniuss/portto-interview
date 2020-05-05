@@ -29,3 +29,7 @@ $ yarn start
 
 1. Using RxJS, since I never tried that.
 2. Applying web3.js, coz I don't have much knowledge of this domain
+
+## Something Confused Me
+
+1. Token Id seems not unique and I didn't see any endpont allowing me to fetch single asset.
