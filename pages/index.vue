@@ -18,7 +18,7 @@ export default Vue.extend({
   methods: {
     handleStartDemoButtonClick() {
       this.$router.push({
-        path: '/collections',
+        path: '/assets',
       });
     },
   },

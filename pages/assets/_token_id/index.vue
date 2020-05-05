@@ -1,7 +1,7 @@
 <template>
   <div class="asset-detail-page">
     <div class="top-section">
-      <nuxt-link to="/collections" class="back-arrow">
+      <nuxt-link to="/assets" class="back-arrow">
         {{ '&lt;' }}
       </nuxt-link>
       <h1 v-if="asset" class="header-title">
@@ -10,8 +10,8 @@
       <LoadingIcon v-show="isFetchingAsset" />
     </div>
     <div v-if="asset" class="asset-content-section">
-      <span v-if="!asset.image_url" class="not-image-text">
-        Image is unkown
+      <span v-if="!asset.image_url" class="no-image-text">
+        Image url is unkown
       </span>
       <img
         v-else

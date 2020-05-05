@@ -33,7 +33,7 @@ export default Vue.extend({
   methods: {
     handleAssetCardClick() {
       this.$router.push({
-        path: `/collections/${this.asset.token_id}/`,
+        path: `/assets/${this.asset.token_id}/`,
       });
     },
   },

@@ -5,6 +5,7 @@
     infinite-scroll-disabled="infiniteScrollingDisabled"
     infinite-scroll-distance="100"
   >
+    <h1 class="title">List</h1>
     <div class="asset-card-list">
       <div
         v-for="asset of assetList"
@@ -31,7 +32,7 @@ import AssetCard from '@/components/cards/AssetCard/index.vue'
 import LoadingIcon from '@/components/icons/LoadingIcon/index.vue'
 
 export default Vue.extend({
-  name: 'CollectionsPage',
+  name: 'AssetsPage',
 
   inheritAttrs: false,
 
@@ -87,10 +88,17 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .collections-page {
   padding: 20px;
+
+  .title {
+    font-size: $font-size-lg;
+    text-align: center;
+  }
+
   .asset-card-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 20px;
 
     .asset-card-container {
       width: calc(50% - 10px);
